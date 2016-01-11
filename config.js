@@ -11,8 +11,7 @@ config = {
   // When running Ghost in the wild, use the production environment
   // Configure your URL and mail settings here
   production: {
-    url: 'http://'+'blog.yellowscale.com',
-    urlSSL: 'https://' + process.env.OPENSHIFT_APP_DNS,
+    url: 'https://'+'blog.yellowscale.com',
     forceAdminSSL: true,
     mail: {},
     server: {
