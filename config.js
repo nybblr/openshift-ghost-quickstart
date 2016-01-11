@@ -22,7 +22,8 @@ config = {
       port: process.env.OPENSHIFT_NODEJS_PORT
     },
     paths: {
-      contentPath: path.join(__dirname, '/content/')
+      contentPath: path.join(__dirname, '/content/'),
+      wellKnown: '/tmp/letsencrypt/public_html/.well-known/'
     }
   }
 };
