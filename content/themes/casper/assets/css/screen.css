@@ -1463,6 +1463,7 @@ body:not(.post-template) .post-title {
 .gist table {
     margin: 0;
     font-size: 1.4rem;
+    text-rendering: auto;
 }
 .gist td {
     line-height: 1.4;
@@ -2062,6 +2063,41 @@ body:not(.post-template) .post-title {
     }
 }
 
+/* ==========================================================================
+   14. Customizations
+   ========================================================================== */
+
+pre {
+  word-wrap: normal;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  -webkit-hyphens: none;
+  hyphens: none;
+}
+pre code, pre tt {
+  white-space: pre;
+}
+
+.post a {
+  text-decoration: none;
+}
+
+.post-content a {
+  text-decoration: none;
+  color: darkgoldenrod;
+  background: #fff8dc;
+  padding: 3px 4px;
+  margin: -3px -4px;
+  border-radius: 5px;
+}
+
+.post-content a:hover {
+  color: inherit;
+}
+
+.hljs {
+  background: none;
+}
 
 /* ==========================================================================
    End of file. Animations should be the last thing here. Do not add stuff
