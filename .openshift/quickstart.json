@@ -2,7 +2,7 @@
     "name": "Ghost",
     "website": "http://tryghost.org/",
     "version": "0.2",
-    "initial_git_url": "https://github.com/openshift-quickstart/openshift-ghost-quickstart.git",
+    "initial_git_url": "https://github.com/nybblr/openshift-ghost-quickstart.git",
     "cartridges": ["nodejs-0.10"],
     "tags": [
         "node.js",
