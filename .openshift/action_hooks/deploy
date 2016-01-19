@@ -21,3 +21,6 @@ ln -sf $OPENSHIFT_REPO_DIR/client $OPENSHIFT_REPO_DIR/node_modules/ghost/core/bu
 echo "Symlinking client index"
 rm -rf $OPENSHIFT_REPO_DIR/node_modules/ghost/core/server/views/default.hbs
 ln -sf $OPENSHIFT_REPO_DIR/client/index.html $OPENSHIFT_REPO_DIR/node_modules/ghost/core/server/views/default.hbs
+
+echo "Applying patches"
+git apply well-known.patch --directory=$OPENSHIFT_REPO_DIR
