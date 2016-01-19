@@ -17,7 +17,7 @@ ln -sf $OPENSHIFT_DATA_DIR/content/images $OPENSHIFT_REPO_DIR/content/images
 
 echo "Symlinking client directory"
 rm -rf $OPENSHIFT_REPO_DIR/node_modules/ghost/core/built
-ln -sf $OPENSHIFT_DATA_DIR/client $OPENSHIFT_REPO_DIR/node_modules/ghost/core/built
+ln -sf $OPENSHIFT_REPO_DIR/client $OPENSHIFT_REPO_DIR/node_modules/ghost/core/built
 echo "Symlinking client index"
 rm -rf $OPENSHIFT_REPO_DIR/node_modules/ghost/core/server/views/default.hbs
-ln -sf $OPENSHIFT_DATA_DIR/client/index.html $OPENSHIFT_REPO_DIR/node_modules/ghost/core/server/views/default.hbs
+ln -sf $OPENSHIFT_REPO_DIR/client/index.html $OPENSHIFT_REPO_DIR/node_modules/ghost/core/server/views/default.hbs
